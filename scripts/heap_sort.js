@@ -4,7 +4,17 @@
 
 function Heap()
 {
+    // Container Visibility
+    let visElement=document.getElementsByClassName("Sub_Heading")
+    for(let i=0;i<visElement.length;i++){
+        visElement[i].style.display='inline';
+    }
+
+    let element=document.getElementById("AlgoName");
+    element.innerText="Heap Sort:";
     //Setting Time complexities
+    element.innerText="Heap Sort:";
+    element.style.color='#3557e8'
     document.getElementById("Time_Worst").innerText="O(N log N)";
     document.getElementById("Time_Average").innerText="Θ(N log N)";
     document.getElementById("Time_Best").innerText="Ω(N log N)";

@@ -8,6 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <title>Sorting Visualiser</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -24,7 +26,7 @@
                         <p>Sorting Speed</p>
                         <input id="a_speed" type="range" min=1 max=5 step=1 value=3>
                     </div>
-                    <button id="a_generate" class="btn-pink">Generate New Array!</button>
+                    <button id="a_generate" class="button-37">Generate New Array!</button>
                 </div>
                 <div class="header-right">
                     <div class="nav-heading">Sorting-Visualiser</div>
@@ -35,7 +37,7 @@
                             <button >Insertion Sort</button>
                             <button >Merge Sort</button>
                             <button >Quick Sort</button>
-                            <button class="btn-pink Sort">Heap Sort</button>
+                            <button class="button-37">Heap Sort</button>
                         </div>
 
                 </div>
@@ -46,39 +48,39 @@
 
             <div class="info-cont1">
 
-                <h3>TIME COMPLEXITY</h3>
+                <h2 id="AlgoName"></h2>
+                <h3 class="Sub_Heading">TIME COMPLEXITY</h3>
 
                 <div class="Complexity-container">
                     <div class="Pair_Definitions">
-                        <p class="Sub_Heading">Worst case:</p>
-                        <p id="Time_Worst"></p>
+                        <span class="Sub_Heading">Worst case:</span>
+                        <span  id="Time_Worst"></span>
                     </div>
                     
                     <div class="Pair_Definitions">
-                        <p class="Sub_Heading">Average case:</p>
-                        <p id="Time_Average"></p>
+                        <span class="Sub_Heading">Average case:</span>
+                        <span id="Time_Average"></span>
                     </div>
                     
                     <div class="Pair_Definitions">
-                        <p class="Sub_Heading">Best case:</p>
-                        <p id="Time_Best"></p>
+                        <span class="Sub_Heading">Best case:</span>
+                        <span id="Time_Best"></span>
                     </div>
                 </div>
 
             </div>
 
             <div id="array_container">
-                
             </div>
 
             <div class="info-cont2">
-                <h3>SPACE COMPLEXITY</h3>
+                <h3 class="Sub_Heading">SPACE COMPLEXITY</h3>
 
                 <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
 
                     <div class="Pair_Definitions">
-                        <p class="Sub_Heading">Worst case:</p>
-                        <p id="Space_Worst"></p>
+                        <span class="Sub_Heading">Worst case:</span>
+                        <span id="Space_Worst"></span>
                     </div>
                     
                 </div>

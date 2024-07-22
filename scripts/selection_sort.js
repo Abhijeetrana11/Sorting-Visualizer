@@ -3,7 +3,16 @@
 // ******************
 function Selection_sort()
 {
+    // Container Visibility
+    let visElement=document.getElementsByClassName("Sub_Heading")
+    for(let i=0;i<visElement.length;i++){
+        visElement[i].style.display='inline';
+    }
+    
     //Setting Time complexities
+    let element=document.getElementById("AlgoName");
+    element.innerText="Selection Sort:";
+    element.style.color='#3557e8'
     document.getElementById("Time_Worst").innerText="O(N^2)";
     document.getElementById("Time_Average").innerText="Θ(N^2)";
     document.getElementById("Time_Best").innerText="Ω(N^2)";
