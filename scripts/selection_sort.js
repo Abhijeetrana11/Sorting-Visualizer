@@ -9,10 +9,12 @@ function Selection_sort()
         visElement[i].style.display='inline';
     }
     
+    let defination=document.getElementsByClassName("algo_desc")[0];
+    defination.innerText="Selection sort is a simple and efficient sorting algorithm that works by repeatedly selecting the smallest (or largest) element from the unsorted portion of the list and moving it to the sorted portion of the list.";
     //Setting Time complexities
     let element=document.getElementById("AlgoName");
     element.innerText="Selection Sort:";
-    element.style.color='#3557e8'
+
     document.getElementById("Time_Worst").innerText="O(N^2)";
     document.getElementById("Time_Average").innerText="Θ(N^2)";
     document.getElementById("Time_Best").innerText="Ω(N^2)";
@@ -36,14 +38,14 @@ function Selection_sort()
             {
                 if(index_min!=i)
                 {
-                    div_update(divs[index_min],div_sizes[index_min],"purple");//Color update
+                    div_update(divs[index_min],div_sizes[index_min],"#662a86");//Color update
                 }
                 index_min=j;
                 div_update(divs[index_min],div_sizes[index_min],"blue");//Color update
             }
             else
             {
-                div_update(divs[j],div_sizes[j],"purple");//Color update
+                div_update(divs[j],div_sizes[j],"#662a86");//Color update
             }
         }
         
@@ -55,7 +57,7 @@ function Selection_sort()
 
             div_update(divs[index_min],div_sizes[index_min],"blue");//Height update
             div_update(divs[i],div_sizes[i],"blue");//Height update
-            div_update(divs[index_min],div_sizes[index_min],"purple");//Color update
+            div_update(divs[index_min],div_sizes[index_min],"#662a86");//Color update
         }
         div_update(divs[i],div_sizes[i],"green");//Color update
     }

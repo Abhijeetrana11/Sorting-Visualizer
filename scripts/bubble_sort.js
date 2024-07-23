@@ -10,8 +10,12 @@ function Bubble()
     }
     let element=document.getElementById("AlgoName");
     element.innerText="Bubble Sort:";
+
+    let defination=document.getElementsByClassName("algo_desc")[0];
+    defination.innerText="Bubble Sort Algorithm is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order.";
+
     //Setting Time complexities
-    element.style.color='#3557e8'
+    element.style.color='#000000'
     document.getElementById("Time_Worst").innerText="O(N^2)";
     document.getElementById("Time_Average").innerText="Θ(N^2)";
     document.getElementById("Time_Best").innerText="Ω(N)";
@@ -39,7 +43,7 @@ function Bubble()
                 div_update(divs[j],div_sizes[j], "blue");//Height update
                 div_update(divs[j+1],div_sizes[j+1], "blue");//Height update
             }
-            div_update(divs[j],div_sizes[j], "purple");//Color updat
+            div_update(divs[j],div_sizes[j], "#662a86");//Color updat
         }
         div_update(divs[j],div_sizes[j], "green");//Color update
     }

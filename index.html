@@ -49,41 +49,36 @@
             <div class="info-cont1">
 
                 <h2 id="AlgoName"></h2>
-                <h3 class="Sub_Heading">TIME COMPLEXITY</h3>
-
-                <div class="Complexity-container">
-                    <div class="Pair_Definitions">
-                        <span class="Sub_Heading">Worst case:</span>
-                        <span  id="Time_Worst"></span>
-                    </div>
-                    
-                    <div class="Pair_Definitions">
-                        <span class="Sub_Heading">Average case:</span>
-                        <span id="Time_Average"></span>
-                    </div>
-                    
-                    <div class="Pair_Definitions">
-                        <span class="Sub_Heading">Best case:</span>
-                        <span id="Time_Best"></span>
-                    </div>
-                </div>
-
+                <p class="algo_desc"></p>
+  
             </div>
 
             <div id="array_container">
             </div>
 
             <div class="info-cont2">
-                <h3 class="Sub_Heading">SPACE COMPLEXITY</h3>
+                
+                <ul class="Complexity-container" id="Time_Complexity_Types_Container">
+                        <li> 
+                            <div class="comp-title">TIME COMPLEXITY:</div>
+                            <ul>
+                                <li>Worst case: <span  id="Time_Worst"  class="Sub_Heading"></span></li>
+                                <li >Average case: <span  id="Time_Average" class="Sub_Heading"></span></li>
+                                <li >Best case: <span  id="Time_Best" class="Sub_Heading"></span></li>
+                            </ul>
+                        </li> 
+                        <br>  
+                        <li>
+                            <div class="comp-title">SPACE COMPLEXITY:</div>
+                            <ul>
+                                <li >Worst case: <span  id="Space_Worst" class="Sub_Heading"></span></li>   
+                            </ul>   
+                        </li>
 
-                <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+                </ul>
+                
 
-                    <div class="Pair_Definitions">
-                        <span class="Sub_Heading">Worst case:</span>
-                        <span id="Space_Worst"></span>
-                    </div>
-                    
-                </div>
+                
             </div>
         </section>
     </div>

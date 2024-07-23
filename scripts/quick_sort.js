@@ -9,11 +9,13 @@ function Quick()
     for(let i=0;i<visElement.length;i++){
         visElement[i].style.display='inline';
     }
-    
+
+    let defination=document.getElementsByClassName("algo_desc")[0];
+    defination.innerText="QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.";
+
     //Setting Time complexities
     let element=document.getElementById("AlgoName");
     element.innerText="Quick Sort:";
-    element.style.color='#3557e8'
     document.getElementById("Time_Worst").innerText="O(N^2)";
     document.getElementById("Time_Average").innerText="Θ(N log N)";
     document.getElementById("Time_Best").innerText="Ω(N log N)";

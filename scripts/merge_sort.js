@@ -9,10 +9,12 @@ function Merge()
         visElement[i].style.display='inline';
     }
     
+    let defination=document.getElementsByClassName("algo_desc")[0];
+    defination.innerText="The process of merge sort is to divide the array into two halves, sort each half, and then merge the sorted halves back together. This process is repeated until the entire array is sorted.";
+
     //Setting Time complexities
     let element=document.getElementById("AlgoName");
     element.innerText="Merge Sort:";
-    element.style.color='#3557e8'
     document.getElementById("Time_Worst").innerText="O(N log N)";
     document.getElementById("Time_Average").innerText="Θ(N log N)";
     document.getElementById("Time_Best").innerText="Ω(N log N)";

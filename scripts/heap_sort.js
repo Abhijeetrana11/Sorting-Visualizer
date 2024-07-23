@@ -10,11 +10,14 @@ function Heap()
         visElement[i].style.display='inline';
     }
 
+    let defination=document.getElementsByClassName("algo_desc")[0];
+    defination.innerHTML="Heap sort is a comparison-based sorting technique based on Binary Heap data structure.<br><br> It is similar to the selection sort where we first find the minimum element and place the minimum element at the beginning.";
+
     let element=document.getElementById("AlgoName");
     element.innerText="Heap Sort:";
     //Setting Time complexities
     element.innerText="Heap Sort:";
-    element.style.color='#3557e8'
+
     document.getElementById("Time_Worst").innerText="O(N log N)";
     document.getElementById("Time_Average").innerText="Θ(N log N)";
     document.getElementById("Time_Best").innerText="Ω(N log N)";

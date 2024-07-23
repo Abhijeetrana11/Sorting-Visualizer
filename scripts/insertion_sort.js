@@ -9,10 +9,13 @@ function Insertion()
         visElement[i].style.display='inline';
     }
     
+    let defination=document.getElementsByClassName("algo_desc")[0];
+    defination.innerText="Insertion sort is a simple sorting algorithm that works by iteratively inserting each element of an unsorted list into its correct position in a sorted portion of the list.";
+
     //Setting Time complexities
     let element=document.getElementById("AlgoName");
     element.innerText="Insertion Sort:";
-    element.style.color='#3557e8'
+
     document.getElementById("Time_Worst").innerText="O(N^2)";
     document.getElementById("Time_Average").innerText="Θ(N^2)";
     document.getElementById("Time_Best").innerText="Ω(N)";
